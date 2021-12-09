@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <section class="cards">
         <div class="cards__container">
-            <div class="panel active" style="background-image: url('assets/images/Cappadocia1.jpg');">
+            <div class="panel active" style="background-image: url('assets/images/Cards8.jpg');">
                 <h3>Title goes here 1</h3>
             </div>
             <div class="panel" style="background-image: url('assets/images/cards3.jpg');">
@@ -31,11 +32,39 @@
             <div class="panel" style="background-image: url('assets/images/cards7.jpg');">
                 <h3>Title goes here 7</h3>
             </div>
-            <div class="panel" style="background-image: url('assets/images/cards8.jpg');">
+            <div class="panel" style="background-image: url('assets/images/Cappadocia1.jpg');">
                 <h3>Title goes here 8</h3>
             </div>
         </div>
     </section>
-    <script src="assets/js/script.js"></script>
+    <section class="menu">
+        <div class="menu__container">
+            <div class="menu__circle">
+                <div class="menu__wrap">
+                <button id="close">
+                    <i class="far fa-times-circle"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="menu__content">
+            <h1 class="menu__title">What is new?</h1>
+            <img src="assets/images/cards2.jpg">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque iure provident ad pariatur hic molestiae officia maiores. Optio dolores necessitatibus porro, consectetur reprehenderit, architecto, voluptas repudiandae exercitationem obcaecati maxime labore quo similique fugiat! Quia id fuga dolore magnam obcaecati, soluta necessitatibus, iste vero accusantium quae repellat in, nobis voluptates veniam recusandae alias repellendus facilis cum officiis saepe. Aliquam, at necessitatibus, ipsum atque voluptatibus excepturi, quod quas accusamus quibusdam sint ipsa assumenda libero ipsam. Perferendis, fugit.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque iure provident ad pariatur hic molestiae officia maiores. Optio dolores necessitatibus porro, consectetur reprehenderit, architecto, voluptas repudiandae exercitationem obcaecati maxime labore quo similique fugiat! Quia id fuga dolore magnam obcaecati, soluta necessitatibus, iste vero accusantium quae repellat in, nobis voluptates veniam recusandae alias repellendus facilis cum officiis saepe. Aliquam, at necessitatibus, ipsum atque voluptatibus excepturi, quod quas accusamus quibusdam sint ipsa assumenda libero ipsam. Perferendis, fugit.</p>
+        </div>
+        </div>
+        <nav>
+            <ul>
+                <li><i class="fas fa-home"></i>Home</li>
+                <li><i class="fas fa-user-tie"></i>About</li></li>
+                <li><i class="far fa-envelope"></i>Contact</li>
+            </ul>
+        </nav>
+    </section>
+    <script src="assets/js/cards.js"></script>
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>
