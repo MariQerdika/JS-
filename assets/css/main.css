@@ -1,1 +1,84 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.cards__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+}
+
+.cards__container .panel {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  border-radius: 5rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  margin: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.cards__container .panel h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 1.8rem;
+  margin: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cards__container .panel.active {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.cards__container .panel.active h3 {
+  opacity: 1;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+@media (max-width: 568px) {
+  .cards__container {
+    width: 100vw;
+  }
+  .cards__container .panel:nth-of-type(5),
+  .cards__container .panel:nth-of-type(6) {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
