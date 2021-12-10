@@ -216,4 +216,124 @@ body {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+.navigation {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eafbff), color-stop(50%, #eafbff), color-stop(50%, #5290f9), to(#5290f9));
+  background-image: linear-gradient(to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50%, #5290f9 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.navigation nav {
+  background-color: #fff;
+  padding: 2rem;
+  width: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: width 0.6s linear;
+  transition: width 0.6s linear;
+}
+
+.navigation nav.active {
+  width: 35rem;
+}
+
+.navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  -webkit-transition: width 0.6s linear;
+  transition: width 0.6s linear;
+}
+
+.navigation nav.active ul {
+  width: 100%;
+}
+
+.navigation nav ul li {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  opacity: 0;
+  -webkit-transition: opacity 0.6 linear, -webkit-transform 0.6s linear;
+  transition: opacity 0.6 linear, -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear, opacity 0.6 linear;
+  transition: transform 0.6s linear, opacity 0.6 linear, -webkit-transform 0.6s linear;
+}
+
+.navigation nav.active ul li {
+  opacity: 1;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.navigation nav ul a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navigation .icon {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+.navigation .icon:focus {
+  outline: 0;
+}
+
+.navigation .icon .line {
+  background-color: #5290f9;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+}
+
+.navigation .icon .line2 {
+  top: auto;
+  bottom: 10px;
+}
+
+.navigation nav.active .icon .line1 {
+  -webkit-transform: rotate(-400deg) translateY(5px);
+          transform: rotate(-400deg) translateY(5px);
+}
+
+.navigation nav.active .icon .line2 {
+  -webkit-transform: rotate(400deg) translateY(-5px);
+          transform: rotate(400deg) translateY(-5px);
+}
 /*# sourceMappingURL=main.css.map */
