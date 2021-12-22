@@ -1,0 +1,12 @@
+.animText {
+    min-height: 100vh;
+    background-color: #333;
+    color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #animText__h1 {
+        font-size: 3rem;
+    }
+}
